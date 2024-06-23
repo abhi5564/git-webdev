@@ -1,2 +1,33 @@
 <p>paragrap added</p>
 <p>append commit</p>
+<p>
+
+    Configuration of Git: open cmd and give following commands  
+    * git config --global user.name "abhi5564"
+    * git config --global user.email "abhishek1801k@gmail.com"
+    * git --cofig --list through this command wwe can check all credentials list that we have set in point 1 nd 2.
+    
+     
+Steps to get a copy of the project from git(Remote) to our system(Local):
+        
+        1. Make a new repo with name "git-webdev" on github with readme.md file included. Before this we need to configure git with 
+        vs code so that that the code we are pushing or pulling have right credentials for paticular repos.
+        * Make a folder "gitdemo" on ur system and open with the vscode where we will take all pullls from the github project.
+        * To clone(get a copy of project) a project give command "git clone https-link=https://github.com/abhi5564/git-webdev.git"
+        * We will see a new folder "git-webdev" inside "gitdemo" so to change directory  to "cd git-webdev" to perform action on the
+          current pulled repo git-webdev.
+        * Make changes in readme.md (kumarr) and add new file index.html
+        * to get all list of files in git-webdev "ls -a" it will give readme.md and .git file(hidden)  and "git status" will give the 
+          status like staged, commit req, or up to date or not. here the changes are not staged for readme.md, and untracked for 
+          index.html so we need to add and commit it. 
+                {4 types of stages 
+                   untracked:new files that git did'nt tracked
+                   modified: changed
+                   staged: files are ready to be comitted
+                   unmodified: unchanged}
+        * add changes: "git add index.html" or "git add ." for adding all files  and then 
+          Commit Changes: "git commit -m some meaningful messages:added new para "   After this all Changes are committed an added
+          but our vs code is one step ahead by github by 1, so we need to push changes to git hub also
+        * Push: "git push origin main"  and it's done.
+
+</p>
